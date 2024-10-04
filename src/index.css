@@ -25,6 +25,13 @@ body {
   justify-content: center;
 }
 
+.apps-wrapper {
+  /* min-height: 66vmin; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  padding: 0 4rem;
+}
 .app {
   min-height: 66vmin;
   display: flex;
@@ -40,14 +47,18 @@ body {
   margin-bottom: 1rem;
 }
 .step-wrapper p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.bill-prompt {
+  color: var(--color-medium);
 }
 
 .button {
   background-color: var(--color-medium);
   font-size: 1.25rem;
   color: var(--color-lightest);
-  padding: 1rem 3rem;
+  padding: 0.75rem 2.5rem;
   border: none;
   border-radius: 7px;
   font-weight: bold;
@@ -74,6 +85,7 @@ select {
   font-family: inherit;
   color: inherit;
   font-size: 1rem;
+  min-width: 18rem;
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-medium);
   border-radius: 4px;
