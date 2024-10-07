@@ -77,14 +77,13 @@ function TipCalculator({ data }) {
         <h2 className="bill-prompt">Enter your bill amount</h2>
       ) : (
         <div>
-          <h2>
-            Your total is ${bill ? totalBill : bill} (${subTotal} +{" "}
+          <h3>
+            Your total is ${bill ? totalBill : bill} {`(${subTotal}`} +
             {totalTips > 0
-              ? ` $${totalTips} tip 😀) ( $${tipAverage} tip each)
+              ? ` $${totalTips} 😀)  $${tipAverage} tip - each
                 `
-              : " No tip 😭"}{" "}
-            )
-          </h2>
+              : " No tip 😭)"}
+          </h3>
         </div>
       )}
 
